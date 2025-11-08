@@ -1,4 +1,4 @@
-import { ElfStatusEnum } from '@value-objects/elf-status.enum';
+import { ElfStatusEnum } from '@value-objects/statuses/elf-status.enum';
 import { Elf } from '@entities/elf/elf';
 import { Present } from '@entities/present/present';
 import { Sleigh } from '@entities/sleigh/sleigh';

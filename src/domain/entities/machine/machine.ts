@@ -1,4 +1,4 @@
-import { MachineStatusEnum } from '@value-objects/machine-status.enum';
+import { MachineStatusEnum } from '@value-objects/statuses/machine-status.enum';
 import { Present } from '@entities/present/present';
 
 export class Machine {

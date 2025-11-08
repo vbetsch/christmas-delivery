@@ -1,4 +1,4 @@
-import { ElfStatusEnum } from '@value-objects/elf-status.enum';
+import { ElfStatusEnum } from '@value-objects/statuses/elf-status.enum';
 import { Present } from '@entities/present/present';
 import { LoadPresentCommand } from '@entities/elf/commands/load-present.command';
 
