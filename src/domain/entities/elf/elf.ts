@@ -23,7 +23,11 @@ export class Elf {
     this._presents.push(present);
   }
 
-  public loadPresent(command: LoadPresentCommand): void {
+  public async loadPresent(command: LoadPresentCommand): Promise<void> {
+    console.log('waiting...');
+    // eslint-disable-next-line @typescript-eslint/no-magic-numbers
+    await new Promise((resolve) => setTimeout(resolve, 3000));
     command.sleigh.loadPresent(command.present);
+    console.log('done');
   }
 }
