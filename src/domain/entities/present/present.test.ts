@@ -1,4 +1,5 @@
 import { PresentStatusEnum } from '../../value-objects/present-status.enum';
+import { Present } from './present';
 
 describe('Present', () => {
   it('should have a status', () => {
