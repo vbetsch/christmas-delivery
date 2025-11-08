@@ -11,4 +11,4 @@ const santaSleigh: Sleigh = new Sleigh();
 
 const currentPresent: Present = toyMachine.buildPresent();
 deliveryElf.takePresent(currentPresent);
-santaSleigh.loadPresent(currentPresent);
+deliveryElf.loadPresent({ present: currentPresent, sleigh: santaSleigh });

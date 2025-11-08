@@ -1,5 +1,6 @@
 import { ElfStatusEnum } from '@value-objects/elf-status.enum';
 import { Present } from '@entities/present/present';
+import { LoadPresentCommand } from '@entities/elf/commands/load-present.command';
 
 export class Elf {
   private readonly _status: ElfStatusEnum;
@@ -20,5 +21,9 @@ export class Elf {
 
   public takePresent(present: Present): void {
     this._presents.push(present);
+  }
+
+  public loadPresent(command: LoadPresentCommand): void {
+    command.sleigh.loadPresent(command.present);
   }
 }
