@@ -1,4 +1,4 @@
-import { PresentStatusEnum } from '../../value-objects/present-status.enum';
+import { PresentStatusEnum } from '@value-objects/present-status.enum';
 
 export class Present {
   private readonly _status: PresentStatusEnum;

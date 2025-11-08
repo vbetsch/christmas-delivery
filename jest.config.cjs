@@ -11,7 +11,8 @@ module.exports = {
     ...tsJestTransformCfg,
   },
   moduleNameMapper: {
-    '^@app/(.*)$': '<rootDir>/src/app/$1',
+    '^@entities/(.*)$': '<rootDir>/src/domain/entities/$1',
+    '^@value-objects/(.*)$': '<rootDir>/src/domain/value-objects/$1',
   },
   coverageThreshold: {
     global: {

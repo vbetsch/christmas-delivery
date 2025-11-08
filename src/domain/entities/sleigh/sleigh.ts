@@ -1,5 +1,5 @@
-import { Present } from '../present/present';
 import { SleighParams } from './sleigh.params';
+import { Present } from '@entities/present/present';
 
 export class Sleigh {
   private readonly _presents: Present[];

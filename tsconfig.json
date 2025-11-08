@@ -6,8 +6,11 @@
         "esModuleInterop": true,
         "baseUrl": "./src",
         "paths": {
-            "@app/*": [
-                "app/*"
+            "@entities/*": [
+                "domain/entities/*"
+            ],
+            "@value-objects/*": [
+                "domain/value-objects/*"
             ]
         },
         // Strictness
