@@ -1,4 +1,5 @@
 import { MachineStatusEnum } from '@value-objects/machine-status.enum';
+import { Present } from '@entities/present/present';
 
 export class Machine {
   private readonly _status: MachineStatusEnum;
@@ -9,5 +10,9 @@ export class Machine {
 
   public get status(): MachineStatusEnum {
     return this._status;
+  }
+
+  public buildPresent(): Present {
+    return new Present();
   }
 }
