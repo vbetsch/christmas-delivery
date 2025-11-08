@@ -1,16 +1,16 @@
 import { Sleigh } from './sleigh';
-import { SleighParams } from './sleigh.params';
+import { Present } from '@entities/present/present';
 
 describe('Sleigh', () => {
   it('should be well initialized', () => {
-    const params: SleighParams = { presents: [] };
-    const sleigh: Sleigh = new Sleigh(params);
+    const sleigh: Sleigh = new Sleigh();
     expect(sleigh).toBeDefined();
     expect(sleigh).toBeInstanceOf(Sleigh);
   });
-  it('should have presents', () => {
-    const params: SleighParams = { presents: [] };
-    const sleigh: Sleigh = new Sleigh(params);
-    expect(sleigh.presents).toStrictEqual(params.presents);
+  it('should load present', () => {
+    const sleigh: Sleigh = new Sleigh();
+    const present: Present = new Present();
+    sleigh.loadPresent(present);
+    expect(sleigh.presents).toStrictEqual([present]);
   });
 });
