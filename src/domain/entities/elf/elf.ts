@@ -17,4 +17,8 @@ export class Elf {
   public isLoaded(): boolean {
     return this._presents.length > 0;
   }
+
+  public takePresent(present: Present): void {
+    this._presents.push(present);
+  }
 }
