@@ -1,7 +1,7 @@
 import { MachineStatusEnum } from '@value-objects/statuses/machine-status.enum';
 import { Machine } from '@entities/machine/machine';
 import { Present } from '@entities/present/present';
-import { Logger } from '@value-objects/logger/logger';
+import { Logger } from '@core/logger/logger';
 
 describe('Machine', () => {
   let loggerSpeakSpy: jest.SpyInstance;

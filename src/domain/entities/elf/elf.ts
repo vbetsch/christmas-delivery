@@ -1,7 +1,7 @@
 import { ElfStatusEnum } from '@value-objects/statuses/elf-status.enum';
 import { Present } from '@entities/present/present';
 import { LoadPresentCommand } from './commands/load-present.command';
-import { Logger } from '@value-objects/logger/logger';
+import { Logger } from '@core/logger/logger';
 
 export class Elf {
   private readonly _id: string;

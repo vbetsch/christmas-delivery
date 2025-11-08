@@ -2,7 +2,7 @@ import { ElfStatusEnum } from '@value-objects/statuses/elf-status.enum';
 import { Elf } from '@entities/elf/elf';
 import { Present } from '@entities/present/present';
 import { Sleigh } from '@entities/sleigh/sleigh';
-import { Logger } from '@value-objects/logger/logger';
+import { Logger } from '@core/logger/logger';
 
 describe('Elf', () => {
   let loggerSpeakSpy: jest.SpyInstance;

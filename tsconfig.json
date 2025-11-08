@@ -6,6 +6,9 @@
         "esModuleInterop": true,
         "baseUrl": "./src",
         "paths": {
+            "@core/*": [
+                "domain/core/*"
+            ],
             "@entities/*": [
                 "domain/entities/*"
             ],

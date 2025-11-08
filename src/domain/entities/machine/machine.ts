@@ -1,6 +1,6 @@
 import { MachineStatusEnum } from '@value-objects/statuses/machine-status.enum';
 import { Present } from '@entities/present/present';
-import { Logger } from '@value-objects/logger/logger';
+import { Logger } from '@core/logger/logger';
 
 export class Machine {
   private readonly _logger: Logger;

@@ -1,4 +1,4 @@
-import { Logger } from '@value-objects/logger/logger';
+import { Logger } from './logger';
 import { SpeakCommand } from './commands/speak.command';
 
 describe('Logger', () => {
